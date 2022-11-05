@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('../assets/cosmic-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    img {
+        width: 960px;
+
+        @media screen and (max-width: 970px) {
+            width: 100%;
+        }
+    }
+}
