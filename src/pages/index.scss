@@ -1,3 +1,6 @@
+* {
+    color: white;
+}
 body {
     padding: 0;
     margin: 0;
@@ -35,14 +38,17 @@ body {
 
         > div {
             flex: 1 1 50%;
-
             > img {
                 width: 100%;
+            }
+            > p {
+                font-size: 24px;
+                max-width: 680px;
             }
         }
     }
     .requirements {
-        background-image: url('../assets/cosmic-zebra.png');
+        background-image: url("../assets/cosmic-zebra.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: center;
@@ -53,6 +59,94 @@ body {
 }
 
 .section3 {
+    padding: 50px 2.5rem;
+    background-image: url("../assets/cosmic-partRectangle.png");
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    > div:first-child {
+        color: white;
+        font-size: 30px;
+        max-width: 800px;
+        > div {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 70%;
+                bottom: 0;
+                left: 0;
+                height: 3px;
+                background-image: url("../assets/cosmic-vector.png");
+            }
+        }
+    }
+    p {
+        color: white;
+        font-size: 24px;
+    }
+}
+.section4 {
+    padding: 50px 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    > div:first-child {
+        color: white;
+        font-size: 30px;
+        max-width: 800px;
+        > div {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 70%;
+                bottom: 0;
+                left: 0;
+                height: 3px;
+                background-image: url("../assets/cosmic-vector.png");
+            }
+        }
+    }
+    p {
+        color: white;
+        font-size: 24px;
+    }
+}
+.section5 {
+    padding: 50px 2.5rem;
+
+    .content {
+        align-items: center;
+        padding: 30px 0;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        > div {
+            flex: 1 1 50%;
+            > img {
+                width: 100%;
+            }
+            > p {
+                font-size: 24px;
+                max-width: 680px;
+            }
+        }
+    }
+    .requirements {
+        background-image: url("../assets/cosmic-zebra.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        width: 200px;
+        padding: 20px 30px;
+        margin-left: 70px;
+    }
 }
 
 // Common Style
@@ -82,7 +176,7 @@ body {
         color: white;
         font-size: 40px;
         margin: 0;
-        width: 230px;
+        width: 300px;
         text-align: center;
     }
 
@@ -96,3 +190,12 @@ body {
         background-image: url("../assets/cosmic-vector.png");
     }
 }
+
+table,caption,
+td {
+    padding: 0px 10px;
+    border-bottom: 1px solid #4caf50;
+    border-collapse: collapse;
+    text-align: center;
+}
+
