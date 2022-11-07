@@ -1,0 +1,21 @@
+.faq-component {
+    width: 100%;
+}
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+}

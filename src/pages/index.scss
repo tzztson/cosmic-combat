@@ -501,6 +501,14 @@ body {
     }
 }
 
+.Cosmic-FAQ {
+    @include containerPadding;
+
+    .Cosmic-Empty {
+        height: 40px;
+    }
+}
+
 .Cosmic-Global {
     img {
         width: 100%;
@@ -519,4 +527,24 @@ th {
     @media screen and (max-width: 500px) {
         font-size: 30px;
     }
+}
+
+.accordion__button {
+    background-color: transparent;
+    padding: 0;
+
+    color: #185f86;
+
+    &:hover {
+        color: #00a6ff;
+        background-color: transparent;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.accordion__panel {
+    padding: 0;
 }
