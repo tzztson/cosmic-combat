@@ -98,7 +98,7 @@ body {
     align-items: flex-start;
     justify-content: stretch;
 
-    gap: 14px;
+    gap: 36px;
 
     .content {
         width: 100%;
@@ -108,15 +108,28 @@ body {
         gap: 30px;
 
         img {
+            flex: 1 1 60%;
             min-height: 300px;
         }
 
         .requirements {
+            flex: 1 1 40%;
             background-image: url("../assets/cosmic-zebra.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             padding: 4px 20px;
+
+            p {
+                padding: 0px 100px;
+            }
+
+            @media screen and (max-width: 800px) {
+                p {
+                    padding: 0px;
+                }
+
+            }
         }
 
         @media screen and (max-width: 1010px) {
