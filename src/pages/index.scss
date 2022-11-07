@@ -276,6 +276,101 @@ body {
 
 .Cosmic-Table {
     @include containerPadding;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .table-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+
+        table,
+        th,
+        td {
+            border: 1px solid #185f86;
+            padding: 10px 20px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td:first-child {
+            text-align: right;
+        }
+
+        @media screen and (max-width:1492px) {
+            flex-direction: column;
+
+            .phase-table {
+                width: 100%;
+
+                table {
+                    width: 100%;
+                }
+
+                td {
+                    text-align: center;
+                }
+            }
+
+            .round-table {
+                width: 100%;
+
+                table {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1160px) {
+            .phase-table {
+                th {
+                    font-size: 2vw
+                }
+
+                td {
+                    font-size: 2vw
+                }
+            }
+
+            .round-table {
+                th {
+                    font-size: 2vw
+                }
+
+                td {
+                    font-size: 2vw
+                }
+            }
+        }
+
+        @media screen and (max-width: 490px) {
+            .phase-table {
+                th {
+                    padding: 0px 3px;
+                    font-size: 12px
+                }
+
+                td {
+                    padding: 0px 3px;
+                    font-size: 12px
+                }
+            }
+
+            .round-table {
+                th {
+                    padding: 0px 3px;
+                    font-size: 12px
+                }
+
+                td {
+                    padding: 0px 3px;
+                    font-size: 12px
+                }
+            }
+        }
+    }
 }
 
 .Cosmic-Getting-Tile {
@@ -360,9 +455,25 @@ body {
     div {
         position: relative;
         @include underline;
+
+        table,
+        th,
+        td {
+            padding: 10px 280px 10px 0px;
+            border-bottom: 1px solid #185f86;
+            border-collapse: collapse;
+
+            @media screen and (max-width:1650px) {
+                padding: 1vh 0;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 20px;
+            }
+        }
     }
 
-    @media screen and (max-width:1390px) {
+    @media screen and (max-width:1650px) {
         div {
 
             table {
@@ -394,30 +505,5 @@ th {
 
     @media screen and (max-width: 500px) {
         font-size: 30px;
-    }
-}
-
-
-table,
-th,
-td {
-    padding: 1vh 14.6vw 1vh 0;
-    border-bottom: 1px solid #185f86;
-    border-collapse: collapse;
-
-    @media screen and (max-width:1390px) {
-        padding: 1vh 0;
-    }
-
-    @media screen and (max-width: 500px) {
-        font-size: 20px;
-    }
-}
-
-td:nth-child(2) {
-    text-align: center;
-
-    @media screen and (max-width:1390px) {
-        text-align: left;
     }
 }

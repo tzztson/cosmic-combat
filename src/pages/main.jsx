@@ -99,34 +99,201 @@ const Main = () => {
                     </div>
                 </div>
                 <Line />
-                {/* <div className="Cosmic-Table">
+                <div className="Cosmic-Table">
                     <Caption title="RULES" />
-                    <div>
-                        <table>
-                            <th>Phase 1</th>
-                            <tr>
-                                <td>Entry</td>
-                                <td>2</td>
-                                <td>CLOUD</td>
-                            </tr>
-                            <tr>
-                                <td>Entry</td>
-                                <td>2</td>
-                                <td>CLOUD</td>
-                            </tr>
-                            <tr>
-                                <td>Entry</td>
-                                <td>2</td>
-                                <td>CLOUD</td>
-                            </tr>
-                            <tr>
-                                <td>Prize Payout</td>
-                                <td>31</td>
-                                <td>CLOUD</td>
-                            </tr>
-                        </table>
+                    <div className="table-list">
+                        <div className="phase-table">
+                            <table>
+                                <th colSpan='3'>Phase 1</th>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize Payout</td>
+                                    <td>31</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div className="round-table">
+                            <table>
+                                <th></th>
+                                <th>Round 1</th>
+                                <th>Round 2</th>
+                                <th>Round 3</th>
+                                <th>Final Round</th>
+                                <tr>
+                                    <td>Players Paid:</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize value in CLOUD:</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize Payout:</td>
+                                    <td>0</td>
+                                    <td>1 CLOUD</td>
+                                    <td>Phase 1 Ticket</td>
+                                    <td>1st: Phase 2 Ticket</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2nd: 3 CLOUD</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
-                </div> */}
+                    <div className="table-list">
+                        <div className="phase-table">
+                            <table>
+                                <th colSpan="3">Phase 1</th>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize Payout</td>
+                                    <td>31</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div className="round-table">
+                            <table>
+                                <th></th>
+                                <th>Round 1</th>
+                                <th>Round 2</th>
+                                <th>Round 3</th>
+                                <th>Final Round</th>
+                                <tr>
+                                    <td>Players Paid:</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize value in CLOUD:</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize Payout:</td>
+                                    <td>0</td>
+                                    <td>1 CLOUD</td>
+                                    <td>Phase 1 Ticket</td>
+                                    <td>1st: Phase 2 Ticket</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2nd: 3 CLOUD</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div className="table-list">
+                        <div className="phase-table">
+                            <table>
+                                <th colspan="3">Phase 1</th>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Entry</td>
+                                    <td>2</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize Payout</td>
+                                    <td>31</td>
+                                    <td>CLOUD</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div className="round-table">
+                            <table>
+                                <th></th>
+                                <th>Round 1</th>
+                                <th>Round 2</th>
+                                <th>Round 3</th>
+                                <th>Final Round</th>
+                                <tr>
+                                    <td>Players Paid:</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize value in CLOUD:</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Prize Payout:</td>
+                                    <td>0</td>
+                                    <td>1 CLOUD</td>
+                                    <td>Phase 1 Ticket</td>
+                                    <td>1st: Phase 2 Ticket</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2nd: 3 CLOUD</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <Line />
                 <div className="Cosmic-Getting-Tile">
                     <div className="tile-descritpion">
