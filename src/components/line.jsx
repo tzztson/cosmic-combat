@@ -1,3 +1,5 @@
+import '../components/line.scss';
+
 const Line = () => {
     return (
         <div className="divide_line">

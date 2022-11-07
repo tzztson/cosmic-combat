@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "CYBERFALL";
+    src: url('../assets/fonts/Cyberfall.otf');
+}
+
+@font-face {
+    font-family: "OSWALD";
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf');
+}
+
+.caption {
+    position: relative;
+    background-image: url("../assets/cosmic-mask.png");
+    background-repeat: no-repeat;
+
+    p {
+        font-family: CYBERFALL;
+        font-size: 45px;
+        font-weight: 400;
+        margin: 0;
+        // text-align: center;
+        background: linear-gradient(to right, #85CAE6, #116FA7);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-image: url("../assets/cosmic-vector.png");
+    }
+}

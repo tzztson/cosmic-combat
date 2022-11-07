@@ -1,0 +1,13 @@
+.rank {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-image: url("../assets/cosmic-slight-vector.png");
+    }
+}
